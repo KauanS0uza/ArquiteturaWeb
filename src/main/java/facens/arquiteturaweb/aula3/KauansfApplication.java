@@ -29,33 +29,41 @@ import java.util.List;
 @SpringBootApplication
 
 /*
-Combina as anotações @Controller e @ResponseBody (Quando um método de um controlador Spring é anotado com @ResponseBody,
-o valor retornado por esse método é convertido automaticamente para o formato de saída desejado (como JSON ou XML) e
-inserido diretamente no corpo da resposta HTTP.). Mapeia os métodos para endpoints REST e converte automaticamente as
-respostas para JSON ou XML.
+ * Combina as anotações @Controller e @ResponseBody (Quando um método de um
+ * controlador Spring é anotado com @ResponseBody,
+ * o valor retornado por esse método é convertido automaticamente para o formato
+ * de saída desejado (como JSON ou XML) e
+ * inserido diretamente no corpo da resposta HTTP.). Mapeia os métodos para
+ * endpoints REST e converte automaticamente as
+ * respostas para JSON ou XML.
  */
 @RestController
 
 /*
-Especifica o prefixo de URL para todos os endpoints do controlador. Neste caso, todos os endpoints estão sob o caminho /api/tasks.
+ * Especifica o prefixo de URL para todos os endpoints do controlador. Neste
+ * caso, todos os endpoints estão sob o caminho /api/tasks.
  */
-@RequestMapping("/api/alunos")
+@RequestMapping("/api/tasks")
 public class KauansfApplication {
 
-	/*
-	Ponto de Entrada: É o método principal que inicia a execução da aplicação Spring Boot.
-
-	Este método estático da classe SpringApplication é usado para iniciar a aplicação Spring Boot.
-	Ele espera dois argumentos: a classe principal da aplicação (Aula3Application.class) e os argumentos da linha de comando (args).
-
-	Aula3Application.class:	Representa a classe principal da aplicação Spring Boot. Essa classe é anotada com @SpringBootApplication
-	e, portanto, é a classe de configuração principal da aplicação.
-
-	args: É uma matriz de strings que contém os argumentos da linha de comando que podem ser passados durante a inicialização da aplicação Spring Boot.
-	 */
-	public static void main(String[] args) {
-		SpringApplication.run(KauansfApplication.class, args);
-	}
-
+  /*
+   * Ponto de Entrada: É o método principal que inicia a execução da aplicação
+   * Spring Boot.
+   * 
+   * Este método estático da classe SpringApplication é usado para iniciar a
+   * aplicação Spring Boot.
+   * Ele espera dois argumentos: a classe principal da aplicação
+   * (Aula3Application.class) e os argumentos da linha de comando (args).
+   * 
+   * Aula3Application.class: Representa a classe principal da aplicação Spring
+   * Boot. Essa classe é anotada com @SpringBootApplication
+   * e, portanto, é a classe de configuração principal da aplicação.
+   * 
+   * args: É uma matriz de strings que contém os argumentos da linha de comando
+   * que podem ser passados durante a inicialização da aplicação Spring Boot.
+   */
+  public static void main(String[] args) {
+    SpringApplication.run(KauansfApplication.class, args);
+  }
 
 }
