@@ -15,9 +15,11 @@ public class AlunoServiceImpl implements AlunoService {
     private final AlunoRepository alunoRepository;
 
     /*
-    A injeção de dependência está evidenciada no construtor da classe TaskService. Aqui, TaskService depende de
-    TaskRepository, que é passado como um parâmetro no construtor. O Spring será responsável por injetar uma instância
-    de TaskRepository quando criar uma instância de TaskService.
+     * A injeção de dependência está evidenciada no construtor da classe
+     * TaskService. Aqui, TaskService depende de
+     * TaskRepository, que é passado como um parâmetro no construtor. O Spring será
+     * responsável por injetar uma instância
+     * de TaskRepository quando criar uma instância de TaskService.
      */
     public AlunoServiceImpl(AlunoRepository alunoRepository) {
         this.alunoRepository = alunoRepository;
@@ -38,4 +40,3 @@ public class AlunoServiceImpl implements AlunoService {
         return alunoRepository.save(aluno);
     }
 }
-

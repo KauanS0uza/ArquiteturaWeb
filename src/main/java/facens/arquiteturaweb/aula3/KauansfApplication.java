@@ -39,7 +39,7 @@ respostas para JSON ou XML.
 /*
 Especifica o prefixo de URL para todos os endpoints do controlador. Neste caso, todos os endpoints estão sob o caminho /api/tasks.
  */
-@RequestMapping("/api/alunos")
+@RequestMapping("/api/tasks")
 public class KauansfApplication {
 
 	/*

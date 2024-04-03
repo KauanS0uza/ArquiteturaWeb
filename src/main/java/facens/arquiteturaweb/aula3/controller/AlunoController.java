@@ -12,9 +12,11 @@ public class AlunoController {
     private final AlunoService alunoService;
 
     /*
-     a injeção de dependência é visível no construtor da classe TaskController. TaskController depende de TaskService,
-     que é passado como um parâmetro no construtor. O Spring será responsável por injetar uma instância de TaskService
-     quando criar uma instância de TaskController.
+     * a injeção de dependência é visível no construtor da classe TaskController.
+     * TaskController depende de TaskService,
+     * que é passado como um parâmetro no construtor. O Spring será responsável por
+     * injetar uma instância de TaskService
+     * quando criar uma instância de TaskController.
      */
     public AlunoController(AlunoService alunoService) {
         this.alunoService = alunoService;
